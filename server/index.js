@@ -20,6 +20,9 @@ mongoose.connect(config.mongoURI, {
     .catch(err => console.log(err))
 
 app.get('/', (req, res) => res.send('Hello World!'))
+
+app.get('/api/hello', (req, res) => res.send('dkssudgktpdy'))
+
 app.post('/api/users/register', (req, res) => {
     //회원가입시 필요한 정보들을 클라이언트에서 가져오면 디비에 넣어준다
     const user = new User(req.body)
