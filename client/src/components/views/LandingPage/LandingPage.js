@@ -5,7 +5,7 @@ function LandingPage() {
 
     useEffect(() => {
         axios.get('/api/hello')
-        .then(res => console.log(res), err => console.log(err))
+        .then(res => console.log(res))
     },[])
 
     return (
