@@ -12,7 +12,6 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import './LoginPage.css'
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.secondary.main,
     },
     form: {
-        width: '100%', // Fix IE 11 issue.
+        width: '100%', 
         marginTop: theme.spacing(1),
     },
     submit: {
@@ -122,21 +121,6 @@ function LoginPage(props) {
                 </Typography>
             </Box>
         </Container>
-
-
-
-
-
-        // <div className="loginpage">
-        //     <form className="loginform" onSubmit={onSubmitHandler}>
-        //         <label>Email</label>
-        //         <input type="email" value={Email} onChange={onEmailHandler} />
-        //         <label>Password</label>
-        //         <input type="password" value={Password} onChange={onPasswordHandler} />
-        //         <br />
-        //         <button type="submit">Login</button>
-        //     </form>
-        // </div>
     )
 }
 
