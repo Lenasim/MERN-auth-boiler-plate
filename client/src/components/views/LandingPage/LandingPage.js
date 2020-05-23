@@ -66,9 +66,11 @@ function LandingPage(props) {
                     <Link variant="button" color="textPrimary" href="#" className={classes.link}>
                         Features
                     </Link>
+                    {!props.isAuth &&
                     <Link variant="button" color="textPrimary" href="/register" className={classes.link}>
                         sign up
                     </Link>
+                    }
                     {props.isAuth ?
                         <Button color="primary" variant="outlined" className={classes.link} onClick={logoutHandler}>Log out</Button>
                         : <Button color="primary" variant="outlined" className={classes.link} href="/login">Log in</Button>
